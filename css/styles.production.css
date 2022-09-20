@@ -169,6 +169,12 @@ button:focus,
   color: #2b2b2b;
 }
 
+
+img {
+  height: 80px;
+}
+
+
 a {
   color: #0066ff;
   text-decoration: none;
