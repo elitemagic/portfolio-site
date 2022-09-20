@@ -1,0 +1,91 @@
+
+
+body {
+  background-color: lightgray;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  font-size: 16px;   /* Sets the font size to 16px */
+  color: #800000;
+  line-height: 1.6;   /* Sets the line-height to 1.6 */
+  border: 5px solid #00aa00;
+
+  /*
+  Colors used
+
+  Text Color (Dark Blue): #00008b;
+  Primary Color (LightBlue): #ADD8E6;
+  Secondary Color (Maroon): #800000;
+   */
+
+}
+
+a {
+  color: red;    /* element selector */
+}
+
+.my-link {
+    color: blue;  /* class selector */
+}
+
+#my-link {
+  color: green;    /* id selector */
+}
+
+
+div {
+  padding: 10px; /* Adds a 10px inner spacing to all sides*/
+  margin: 10px; /* Adds a 10px outer spacing to all sides*/
+  border: 1px solid black; /* Attributes describe: thickness, type, color*/
+}
+
+
+
+
+.header__title {
+  /* No spacing to top and bottom and auto-spacing to left and right, which centers the container horizontally*/
+  margin: 0 auto;
+}
+
+
+.article {
+  display: block;
+}
+
+.article__graphic--inline {
+  display: inline-block;
+}
+
+
+.navigation__logo {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+
+/* Top and Bottom borders come in */
+  nav.page-header__item a:before, div.page-header__item a:after {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: #FFF;
+        content: "";
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    nav.page-header__item a:before  {
+        top: 0px;
+        transform: translateY(-10px);
+    }
+
+    nav.page-header__item a:after   {
+        bottom: 0px;
+        transform: translateY(10px);
+    }
+
+    nav.page-header__item a:hover:before, nav.page-header__item a:hover:after  {
+        opacity: 1;
+        transform: translateY(0px);
+    }
