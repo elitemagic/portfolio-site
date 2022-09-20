@@ -144,6 +144,10 @@ button:focus,
   color: #2b2b2b;
 }
 
+img {
+  height: 250px;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
