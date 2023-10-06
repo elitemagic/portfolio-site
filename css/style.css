@@ -180,7 +180,7 @@ a:active {
 
 .grid__item:last-child {
   grid-column: 3 / 3;
-  grid-row: 1 / 4;
+  grid-row: 1 / 1;
 }
 
 /* end grid fallback */
