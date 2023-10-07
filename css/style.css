@@ -166,50 +166,6 @@ a:active {
   color: var(--secondary-color); /* selected link */
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-}
-
-.grid__item {
-  background-color: lightgray;
-  display: inline-block;
-  width: 33%;
-}
-
-.grid__item:last-child {
-  grid-column: 3 / 3;
-  grid-row: 1 / 1;
-}
-
-/* end grid fallback */
-
-@supports (display: grid) {
-  .grid {
-    display: grid;
-
-    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
-    grid-template-columns: 50%;
-
-    /* alter number of columns of grid */
-    grid-gap: 20px;
-    margin: 0;
-  }
-
-  .grid__item {
-    background-color: lightgray;
-    width: auto;
-    min-height: auto;
-    margin: 0;
-  }
-
-  .grid__item:last-child {
-    grid-column: 2 / 2;
-    grid-row: 1 / 6; /* stretch last grid item to base of the column */
-  }
-}
-
 @keyframes emu-move {
   from {
     transform: translate(0, 8px);
@@ -238,30 +194,53 @@ a:active {
   animation: 8s kangaroo_light-move-reverse infinite alternate linear;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: lightgray;
+  display: inline-block;
+  width: 33%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+
+@media all and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media all and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (min-width: 750px) and (max-width: 1000px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 1000px) {
-  .grid {
+  .grid-container {
     grid-gap: 10px;
   }
 
-  .grid__item:last-child {
+  .grid-item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
 
-  h2 {
-    font-size: 16px;
+  h1 {
+    font-size: 22px;
   }
 }
 
