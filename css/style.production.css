@@ -259,7 +259,10 @@ a:active {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(33%, 1fr)
+  ); /* Adjust the percentage accordingly */
   grid-gap: 20px;
 }
 
