@@ -5,12 +5,6 @@
 * Browsers: last 4 version
 */
 
-:root {
-  /* Colors */
-
-  /* other repetitive values  */
-}
-
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -251,7 +245,7 @@ a:active {
   animation: 8s kangaroo_light-move-reverse infinite alternate linear;
 }
 
-.work-grid {
+.grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
