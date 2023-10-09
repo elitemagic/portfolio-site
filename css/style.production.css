@@ -245,15 +245,9 @@ a:active {
   animation: 8s kangaroo_light-move-reverse infinite alternate linear;
 }
 
-.grid {
+.grid-work {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -280,19 +274,19 @@ a:active {
 }
 
 @media all and (max-width: 500px) {
-  .grid-container {
+  .grid-work {
     grid-template-columns: 1fr;
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-  .grid-container {
+  .grid-work {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all and (max-width: 750px) {
-  .grid-container {
+  .grid-work {
     grid-gap: 10px;
   }
 }
