@@ -251,7 +251,7 @@ a:active {
   animation: 8s kangaroo_light-move-reverse infinite alternate linear;
 }
 
-.grid {
+.work-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
