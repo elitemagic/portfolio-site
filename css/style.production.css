@@ -247,15 +247,21 @@ a:active {
 
 .grid-work {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  text-align: center;
 }
 
 .grid-item {
   background-color: lightgray;
-  display: inline-block;
-  width: 100%; /* Set width to take up full width of the grid cell */
-  height: 100%; /* Set a fixed height for all grid items */
+  display: inline-flex;
+  width: 95%;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .page-footer {
@@ -274,19 +280,19 @@ a:active {
 }
 
 @media all and (max-width: 500px) {
-  .grid-work {
+  .grid-container {
     grid-template-columns: 1fr;
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-  .grid-work {
+  .grid-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all and (max-width: 750px) {
-  .grid-work {
+  .grid-container {
     grid-gap: 10px;
   }
 }
