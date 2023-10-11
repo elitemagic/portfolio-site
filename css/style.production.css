@@ -249,12 +249,19 @@ a:active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  text-align: center;
 }
 
 .grid-item {
   background-color: lightgray;
-  display: inline-block;
-  width: 33%;
+  display: inline-flex;
+  width: 95%;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .page-footer {
