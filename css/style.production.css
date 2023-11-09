@@ -246,14 +246,14 @@ a:active {
   animation: 8s kangaroo_light-move-reverse infinite alternate linear;
 }
 
-.grid-work {
+.projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   text-align: center;
 }
 
-.grid-item {
+.projects_item {
   background-color: lightgray;
   display: inline-flex;
   width: 95%;
