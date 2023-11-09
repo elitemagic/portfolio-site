@@ -280,19 +280,26 @@ h1 {
   text-align: center;
 }
 
+@media all and (max-width: 500px) {
+  .projects {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
 @media all and (min-width: 500px) and (max-width: 750px) {
-  .grid-work-container {
+  .projects {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all and (max-width: 750px) {
-  .grid-work-container {
+  .projects {
     grid-gap: 10px;
   }
 
-  .grid-item-last {
+  .projects_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
