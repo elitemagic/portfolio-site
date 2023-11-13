@@ -188,6 +188,12 @@ a:active {
   color: #f00; /* selected link */
 }
 
+/* CSS to set a consistent size for social media icons */
+.social-media {
+  width: 50px;
+  height: 50px;
+}
+
 @-webkit-keyframes emu-move {
   from {
     -webkit-transform: translate(0, 8px);
@@ -248,7 +254,7 @@ a:active {
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   text-align: center;
 }
@@ -256,6 +262,8 @@ a:active {
 .projects_item {
   background-color: lightgray;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 95%;
 }
 
